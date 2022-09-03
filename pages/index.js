@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { AiOutlineUserAdd } from 'react-icons/ai';
+import  Table from '../components/table'
 
 export default function Home() {
   return (
@@ -17,12 +18,14 @@ export default function Home() {
         </h1>
         <div className='container mx-auto flex justify-between py-5 border-b'>
           <div className='left flex gap-3'>
-          <button className='flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-grary-50 hover:border-indigo-500 hover:text-gray-800'>
+            <button className='flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-grary-50 hover:border-indigo-500 hover:text-gray-800'>
               Add Employee <span className='px-1'><AiOutlineUserAdd size={23}></AiOutlineUserAdd></span>
             </button>
 
           </div>
         </div>
+
+        <Table></Table>
       </main>
     </section>
 
